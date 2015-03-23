@@ -1,0 +1,616 @@
+<html>
+<head>
+<style type="text/css">
+
+body {
+    background: #f3f3f3;
+}
+
+.entire {
+    background: #f3f3f3;
+    
+}
+    
+.header {
+    background: #000; 
+    position:relative;
+    top: 0px;
+    left: 0px;
+    margin: -10px;
+    padding: 15px;
+    height: 75px;
+    
+}
+    
+.title {
+    font-family: Giza;
+    color: #fff;
+    font-size: 52px;
+    
+}
+
+.subtitle {
+    color: #fff;
+    font-family: GriffithGothic;
+    font-size: 11px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+    
+ 
+    
+    
+    
+    
+    
+    
+ 
+
+
+.container {
+  
+    height: 10px;
+    width: 150px;
+    position: absolute;
+    left: 600px;
+    top: 40px;
+    padding: 10px;
+  
+}
+.login:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+    
+  
+}
+ 
+.login h1 {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  text-shadow: 0 1px white;
+  background: #f3f3f3;
+    
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+  
+}
+ 
+.login p {
+  margin: 20px 0 0;
+    
+  
+}
+ 
+.login p:first-child {
+  margin-top: 0;
+    
+    
+  
+  
+}
+ 
+.login input[type=text] {
+    position: absolute;
+    top: -15px;
+    left: 60px; /* username placement */
+    height: 25px;
+    font-family: GriffithGothic;
+    
+    width: 165px;
+    
+  
+  
+  
+}
+
+.login input[type=password] {
+    position: absolute;
+    top: -15px;
+    left: 240px; /* password placement */
+    height: 25px;
+    width: 165px;
+  /* password box */
+}
+ 
+.login p.remember_me {
+    position: relative;
+    top: 10px;
+    right: 175px;
+     /* remember me *//* remember me */
+    
+    
+    width: auto;
+    
+/* remember me on this computer length */    
+        
+  
+}
+ 
+.login p.remember_me label {
+  font-size: 14px;
+  color: #fff; /* remember me */
+margin-left: 200px;
+    position: relative;
+    top: -12px;
+  cursor: pointer;
+  
+}
+ 
+.login p.remember_me input {
+  position: relative;
+  bottom: 1px;
+    
+  margin-right: 4px;
+  
+  
+  
+}    
+    
+.login-help {
+    font-size: 10px;
+    position: absolute;
+    top: 25px;
+    left: 258px;
+    color: #fff;
+    width: 300px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+    
+a:hover {
+    color: #a0d8d1;
+    text-decoration: none;
+}
+
+    
+    
+    
+    
+input {
+    font-family: GriffithGothic;
+    font-size: 12px;
+    color: #000;
+    
+    letter-spacing: 1px;
+    
+}
+ 
+input[type=text] {
+  
+  
+  width: 200px;
+  height: 34px;
+  color: #000;
+    
+}
+    
+input[type=password] {
+  
+  width: 200px;
+  height: 34px;
+  color: #000; 
+ 
+}    
+ 
+
+    
+/* LOGIN BUTTON  */    
+input[type=submit] {
+    padding: 0 18px;
+    position:absolute;
+    top: -15px;
+    left: 420px;  /* login placement */
+    height: 22px;
+    width: 50px;
+    font-size: 10px;  
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #a0d8d1;
+    letter-spacing: 1px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  
+}    
+    
+    
+    
+.aboutcontainer {
+    
+    position: absolute;
+    left: -5px;
+    padding: 5px;
+    width: 100%;
+    margin: 9px;
+    max-height:270px;
+    
+}
+    
+.image {
+    width: 550px;
+    max-height: 300px;
+    float: left;
+}
+    
+.containinfo {
+    
+    left: 545px;
+    top: 25px;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 5px;
+    padding: 5px;
+    width: 550px;
+    z-index: 9999999;
+    /* orange    background: #ffbb12; */
+}
+    
+.welcome {
+    font-size: 35px;
+    font-family: GriffithGothic;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+    
+.about {
+    font-family: GriffithGothic;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 500px;
+    line-height: 1.5em;
+}
+  
+.navcon {
+    background: #000;
+    position: relative;
+    top: 85px;
+background: #a0d8d1;
+    width: 100%;
+    margin-left: -10px;
+    padding: 10px;
+    z-index: 99999;
+    color: #fff;
+    height: 15px;
+}
+
+.nav {
+    font-family: GriffithGothic;
+    font-size: 17px;
+    margin-left: 20px;
+    padding-right: 20px;
+    word-spacing: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    float: right;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+    
+.nav a:hover {
+    color: #000; 
+}
+    
+    
+    
+    
+    
+/* S E A R C H */
+   
+#tfheader{
+		background-color:#000;
+    margin-top: 330px;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+        position: absolute;
+		top: 200px;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+        top: 10px;
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	} 
+    
+    
+/* S E A R C H     E N D */
+
+    
+    
+    
+    
+ 
+/*
+    
+.containinfo {
+    background: #fff;
+    padding: 5px;
+    position: relative;
+    margin-left: 15px;
+    background: #fff;
+    float: left; 
+}
+         
+    
+
+.welcome {
+    font-size: 35px;
+    font-family: GriffithGothic 'bold';
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+}
+
+.about {
+    
+    font-family: GriffithGothic 'bold';
+    font-size: 13px;
+}
+    
+    
+*/
+    
+    
+.leftcon {
+    background: #fff;
+    width: 550px;
+    margin-top: 10px;
+    margin-left: 35px;
+    height: 800px;
+    padding-bottom: 20px;
+}
+
+#leftbox {
+    background: #a0d8d1;
+    padding: 10px;
+    
+    
+}
+    
+#lefttitle {
+    color: #fff;
+    font-family: GriffithGothic;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+    
+#leftimagebox {
+    background: #000;
+}
+    
+#leftimage {
+    padding: 10px;
+    width: 150px;
+    height: 226px;
+}
+    
+    
+    
+    
+    
+
+
+
+</style>
+</head>
+<body>
+ 
+<div class="entire">    
+    
+    
+<div class="header">
+    
+    
+    
+    
+    <div class="container">
+  <div class="login">
+    
+    <form method="post" action="">
+      <p><input type="text" name="login" value="" placeholder="USERNAME"></p>
+      <p><input type="password" name="password" value="" placeholder="PASSWORD"></p>
+      <p class="remember_me">
+        <label>
+         <label>
+          <input type="checkbox" name="remember_me" id="remember_me">
+          Remember me
+        </label>
+        </label>
+      </p>
+      <p class="submit"><input type="submit" name="commit" value="Login"></p>
+    </form>
+  </div>
+ 
+  <div class="login-help">
+    <p>Forgot your password? <a href="#">Click here to reset it</a>.</p>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="title">
+        M|I|C/A
+    </div>
+    <div class="subtitle">
+         <p>Maryland Institute College of Art</p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<div class="aboutcontainer">
+     <img class="image" src="libra.jpg">
+
+
+
+    
+</div>    
+
+  
+    
+    
+<div class="containinfo">
+    <div class="welcome">Welcome to decker library</div>
+    <div class="about">
+        	The Decker Library is the campus library of the Maryland Institute College of Art, located on the first floor and lower level of the Bunting Center. The library contains over 100,000 books and serials, over 5,000 DVDs and access to thousands of electronic journals through subscription databases and hundreds of print journal titles. Additionally, the library has access to over 100,000 ebooks, over 40,000 digital images and over 1,000 streaming video titles all available through the library catalog. While the main focus of the library is the visual arts, the collection also includes a broad and balanced selection of academic and recreational material relating to many subjects.
+    </div>    
+</div> 
+    
+<div class="navcon">
+    <div class="nav">
+        <a href="/">about</a>
+        <a href="/">news</a>
+        <a href="/">browse</a>
+        <a href="/">database</a>
+        <a href="/">account</a>
+        <a href="/">reviews</a>
+        <a href="/">support</a>
+    
+    
+    
+    </div>
+    
+</div>    
+    
+    
+    
+</div>    
+    
+
+    
+    
+    
+<!--    S E A R C H -->
+    
+  <div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		</form>
+	<div class="tfclear"></div>
+	</div>  
+    
+    
+    
+    
+    
+<!--    S E A R C H -->
+    
+
+<div class="leftcon">
+    <div id="leftbox"> 
+        <div id="lefttitle">New Releases</div>
+    </div>
+    
+     <div id="leftimagebox">
+        <img id="leftimage" src="book1.jpg">
+        <img id="leftimage" src="book2.jpg">
+        <img id="leftimage" src="book3.jpg">
+    </div>
+    
+    
+    
+    <div id="leftbox"> 
+        <div id="lefttitle">Exhibitions</div>
+    </div>
+    
+</div>  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ </div>   
+</body>    
+</html>
+
+<!--      
+
+id = #   more then once
+class = .     just once  
+
+ background: #e74c3c; 
+
+-->
