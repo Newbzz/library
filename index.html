@@ -4,6 +4,7 @@
 
 body {
     background: #f3f3f3;
+    overflow-x: hidden;
 }
 
 .entire {
@@ -13,14 +14,15 @@ body {
     
 .header {
     background: #000; 
-    position:relative;
-    top: 0px;
-    left: 0px;
-    margin: -10px;
+    width: 1000px;
+    margin-top: -10px;
+    margin-left: 125px;
     padding: 15px;
-    height: 75px;
-    
+    height: 80px;
 }
+    
+    
+    
     
 .title {
     font-family: Giza;
@@ -49,15 +51,19 @@ body {
 
 
 .container {
-  
-    height: 10px;
-    width: 150px;
-    position: absolute;
-    left: 600px;
+    
+    height: 40px;
+    width: 150px; 
+    margin-left: 100px;
+    margin-top: -70px;
+    left: 400px;
     top: 40px;
-    padding: 10px;
-  
+    padding: 15px; 
+    
 }
+    
+
+    
 .login:before {
   content: '';
   position: absolute;
@@ -66,7 +72,7 @@ body {
   bottom: -8px;
   left: -8px;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.08);
+  
   border-radius: 4px;
     
   
@@ -108,12 +114,15 @@ body {
 }
  
 .login input[type=text] {
-    position: absolute;
-    top: -15px;
-    left: 60px; /* username placement */
-    height: 25px;
-    font-family: GriffithGothic;
     
+    
+    /* username placement */
+    height: 25px;
+    margin-right: -35em;
+    margin-top: -30px;
+    font-family: GriffithGothic;
+    float: right;
+   
     width: 165px;
     
   
@@ -122,9 +131,10 @@ body {
 }
 
 .login input[type=password] {
-    position: absolute;
-    top: -15px;
-    left: 240px; /* password placement */
+    float: right;
+    margin-top: -30px;
+    margin-right: -50em;
+    /* password placement */
     height: 25px;
     width: 165px;
   /* password box */
@@ -132,8 +142,8 @@ body {
  
 .login p.remember_me {
     position: relative;
-    top: 10px;
-    right: 175px;
+    top: 30px;
+    right: 0px;
      /* remember me *//* remember me */
     
     
@@ -166,9 +176,10 @@ margin-left: 200px;
     
 .login-help {
     font-size: 10px;
+    
     position: absolute;
-    top: 25px;
-    left: 258px;
+    top: 80px;
+    left: 68.5em;
     color: #fff;
     width: 300px;
 }
@@ -191,6 +202,7 @@ input {
     font-family: GriffithGothic;
     font-size: 12px;
     color: #000;
+    background: #fff;
     
     letter-spacing: 1px;
     
@@ -199,7 +211,7 @@ input {
 input[type=text] {
   
   
-  width: 200px;
+  width: 500px;
   height: 34px;
   color: #000;
     
@@ -218,9 +230,11 @@ input[type=password] {
 /* LOGIN BUTTON  */    
 input[type=submit] {
     padding: 0 18px;
-    position:absolute;
-    top: -15px;
-    left: 420px;  /* login placement */
+    margin-top: -68px;
+    margin-right: -70em;
+/*     margin-left: 60em;  */
+    float:right;
+    /* login placement */
     height: 22px;
     width: 50px;
     font-size: 10px;  
@@ -236,79 +250,99 @@ input[type=submit] {
     
     
     
-.aboutcontainer {
     
-    position: absolute;
-    left: -5px;
-    padding: 5px;
-    width: 100%;
-    margin: 9px;
-    max-height:270px;
+    
+   
+.secondcontainer {
+    
+    width: 1000px;
+   
+    margin-left: 125px;
     
 }
+    
+    
+    
+
+    
+.aboutcontainer {
+    width: 1030px;
+}
+       
+    
+    
+    
     
 .image {
-    width: 550px;
-    max-height: 300px;
-    float: left;
+?*    width: 550px;
+    max-height: 300px;  */
 }
     
-.containinfo {
     
-    left: 545px;
-    top: 25px;
-    margin-top: 20px;
-    position: relative;
-    margin-left: 5px;
+    
+    
+    
+.containinfo {
+    background: #fff;
+    width: 1020px;
+    margin-left: 125px;
+  
     padding: 5px;
-    width: 550px;
+    padding-top: 15px;
+    
     z-index: 9999999;
     /* orange    background: #ffbb12; */
 }
     
 .welcome {
+    
     font-size: 35px;
+    text-align: center;
     font-family: GriffithGothic;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    width: 1020px;
+    
+    margin-top: 5px;
 }
     
 .about {
+    
+    text-align: justify;
     font-family: GriffithGothic;
     font-size: 12px;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 5px;
-    width: 500px;
+    
+    margin-top: 5px;
+    padding: 10px 20px 10px 20px;
+    width: 980px;
     line-height: 1.5em;
 }
   
+    
 .navcon {
-    background: #000;
-    position: relative;
-    top: 85px;
-background: #a0d8d1;
-    width: 100%;
-    margin-left: -10px;
+    background: #a0d8d1;
+    width: 1010px;
+    margin-left: 125px;
     padding: 10px;
-    z-index: 99999;
     color: #fff;
     height: 15px;
 }
 
 .nav {
+    float: right;
     font-family: GriffithGothic;
-    font-size: 17px;
+    font-size: 12px;
     margin-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     word-spacing: 2em;
     text-transform: uppercase;
     text-align: center;
-    float: right;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: bold;
 }
+    
+    
     
 .nav a:hover {
     color: #000; 
@@ -318,104 +352,21 @@ background: #a0d8d1;
     
     
     
-/* S E A R C H */
+    
    
-#tfheader{
-		background-color:#000;
-    margin-top: 330px;
-	}
-	#tfnewsearch{
-		float:right;
-		padding:20px;
-	}
-	.tftextinput{
-		margin: 0;
-		padding: 5px 15px;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size:14px;
-		border:1px solid #0076a3; border-right:0px;
-		border-top-left-radius: 5px 5px;
-		border-bottom-left-radius: 5px 5px;
-	}
-	.tfbutton {
-        position: absolute;
-		top: 200px;
-		padding: 5px 15px;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size:14px;
-		outline: none;
-		cursor: pointer;
-		text-align: center;
-		text-decoration: none;
-		color: #ffffff;
-		border: solid 1px #0076a3; border-right:0px;
-		background: #0095cd;
-		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
-		border-top-right-radius: 5px 5px;
-		border-bottom-right-radius: 5px 5px;
-	}
-	.tfbutton:hover {
-        top: 10px;
-		text-decoration: none;
-		background: #007ead;
-		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
-		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
-	}
-	/* Fixes submit button height problem in Firefox */
-	.tfbutton::-moz-focus-inner {
-	  border: 0;
-	}
-	.tfclear{
-		clear:both;
-	} 
-    
-    
-/* S E A R C H     E N D */
-
     
     
     
     
- 
-/*
     
-.containinfo {
-    background: #fff;
-    padding: 5px;
-    position: relative;
-    margin-left: 15px;
-    background: #fff;
-    float: left; 
-}
-         
-    
-
-.welcome {
-    font-size: 35px;
-    font-family: GriffithGothic 'bold';
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    
-}
-
-.about {
-    
-    font-family: GriffithGothic 'bold';
-    font-size: 13px;
-}
-    
-    
-*/
     
     
 .leftcon {
     background: #fff;
-    width: 550px;
-    margin-top: 10px;
-    margin-left: 35px;
-    height: 800px;
+    width: 650px;
+    margin: -15.3em 0px 0px 125px;
+    
+    height: 660px;
     padding-bottom: 20px;
 }
 
@@ -436,41 +387,405 @@ background: #a0d8d1;
 }
     
 #leftimagebox {
-    background: #000;
+    background: #fff;
+    padding: 10px 0px 0px 20px;
+    height: 300px;
+    
+    
 }
     
+#imgbox {
+     
+    width: 150px;
+    float: left;
+    margin: 20px 0px 0px 35px;
+    
+}
+    
+#books {
+    background: #fff;
+    color: #000;
+    font-family: GriffithGothic;
+    font-size: 11px;
+    margin-left: 1px;
+    margin-top: 1px;
+    padding: 5px;
+    text-align: center;
+    
+}
+    
+    
 #leftimage {
-    padding: 10px;
+    
     width: 150px;
     height: 226px;
 }
     
     
+.cookbox {
+    
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+    
+.cooktext {
+    background: #fff;
+    font-family: GriffithGothic; 
+    color: #000;
+    font-size: 11px;
+    padding: 15px;
+    width: 390px;
+    height: 250px;
+    text-indent: 20px;
+    
+}
+    
+.cookdate {
+   /* background: #65ffd2;  */
+    width: 200px;
+    padding: 15px;
+    float: right;
+    text-align: right;
+    
+}
+    
+.cookmore {
+   
+    margin-top: 48px;
+    font-weight:700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    
+}
+    
+.cookmore a {
+    color: #000;   
+}
+    
+.cookmore a:hover {
+    color: #fff;   
+}
+   
+.cookpic {
+    margin-left: 405px;
+    margin-top: -235px;
     
     
+    
+}
+    
+    
+    
+    
+    
+.searchbox{
+    
+  margin: 10px 0px 0px 57.5em;
+  width: 330px;
+  height: 50px;
+}
+    
+    .container-1{
+  width: 30px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+    
+    .container-1 input#search{
+  width: 240px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+    
+    .container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+ .opt {
+    font-family:GriffithGothic;
+     font-size: 13px;
+     border: 0px;
+     height: 30px;
+     margin-top: -50px;
+     width: 125px;
+     margin-left: 60.5em;
+     background: #fff;
+ }
+    
+    
+.opt2 {
+    font-family:GriffithGothic;
+     font-size: 13px;
+     border: 0px;
+     height: 30px;
+     margin-top: -50px;
+     width: 125px;
+     margin-left: 50.3em;
+     background: #fff;
+ }    
+    
+    
+    
+    
+    
+.libinfobox {
+    background: #fff;
+    margin-left: 50em;
+    
+    padding-bottom: 10px;
+   
+    width: 355px;
+   
+   
+}
+   
+#librheader {
+    background: #a0d8d1;
+    padding: 10px;
+}
+    
+#librtitle {
+    color: #fff;
+    font-family: GriffithGothic;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;   
+}
+    
+.librtext {
+    font-size: 13px;
+    color: #000;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding 30px;
+    font-family: GriffithGothic;
+    line-height: 2em;
+}
+    
+.librtext a {
+    color: #000;
+}
+    
+.librtext a:hover {
+    color: #a0d8d1;   
+}
     
 
+.important {
+    background: #658dff;
+    float: right;
+    margin-right: 89px;
+    margin-top: -415px;
+    width: 355px;
+    height: 300px;
+}
+    
+.importheader {
+    background: #a0d8d1;
+    padding: 10px;
+}
+    
+.importtitle {
+    color: #fff;
+    font-family: GriffithGothic;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px; 
+}
+   
+.importsub {
+    font-size: 17px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-weight: 700;
+}
+    
+.importinfo {
+    background: #fff;
+    font-family: GriffithGothic;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+    
+.importinfo a{
+    color: #000;   
+}
+    
+.importinfo a:hover {
+    color: #a0d8d1;
+}
+    
+li {
+list-style-type: none;
+}
+    
+    
+    
+.footer {
+    background: #000;
+    height: 260px;
+    width: 990px;
+    margin-left: 125px;
+    padding: 10px;
+}
+    
+.foothead {
+    
+    color: #fff;
+    padding: 10px 0px 0px 10px;
+    font-family: GriffithGothic;
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+    
+    
+    
+.side1 {
+   /* background: #65caff;  */
+    width: 275px;
+    float: left;
+    padding: 10px;
+    
+}
+    
+.subheader1 {
+     color: #fff;
+    font-family: GriffithGothic;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+    
+.subinfo1 {
+    color: #fff;
+    font-family: GriffithGothic;
+    font-size: 13px;
+    line-height: 15px;
+}
+   
+    
+    
+    
+    
+    
+.side2 {
+ width: 275px;
+    margin-left: 300px;
+}
+    
+.subheader2 {
+     color: #fff;
+    font-family: GriffithGothic;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}    
+    
+    
+    
+    
+.side {
+    background: #fff;
+    color: #000;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+    
+#subheader {
+    color: #000;
+    font-family: GriffithGothic;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+    
+ .subinfo {
+     margin-top: 5px;
+     color: #000;
+     font-size: 12px;
+     font-family: GriffithGothic;
+     line-height: 15px;
+ }
+    
+#subheader2 {
+   
+    color: #000;
+    margin-left: 260px;
+    margin-top: -140px;
+    padding-right: 20px;
+    font-family: GriffithGothic;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+ 
+.subinfo2 {
+    margin-top: 5px;
+    color: #000;
+    font-size: 12px;
+    font-family: GriffithGothic;
+    font-weight: 100;
+    text-transform: none;
+    line-height: 15px;
+    
+}
+    
+    
 
 
 </style>
 </head>
 <body>
  
-<div class="entire">    
-    
-    
 <div class="header">
+    <div class="title">
+        M|I|C/A
+    </div>
+    <div class="subtitle">
+        <p>Maryland Institute College of Art</p>
+    </div>    
+
     
     
     
     
-    <div class="container">
+<div class="container">
   <div class="login">
-    
-    <form method="post" action="">
-      <p><input type="text" name="login" value="" placeholder="USERNAME"></p>
-      <p><input type="password" name="password" value="" placeholder="PASSWORD"></p>
-      <p class="remember_me">
+        <form method="post" action="">
+            <p><input type="text" name="login" value="" placeholder="USERNAME"></p>
+            <p><input type="password" name="password" value="" placeholder="PASSWORD"></p>
+            <p class="remember_me">
         <label>
          <label>
           <input type="checkbox" name="remember_me" id="remember_me">
@@ -489,41 +804,17 @@ background: #a0d8d1;
     
     
     
+</div>   
     
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="title">
-        M|I|C/A
+<div class="secondcontainer">
+    <div class="aboutcontainer">
+        <img class="image" src="libra.jpg" width="100%" height="455">
     </div>
-    <div class="subtitle">
-         <p>Maryland Institute College of Art</p>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<div class="aboutcontainer">
-     <img class="image" src="libra.jpg">
-
-
-
-    
 </div>    
-
-  
     
     
 <div class="containinfo">
@@ -531,7 +822,9 @@ background: #a0d8d1;
     <div class="about">
         	The Decker Library is the campus library of the Maryland Institute College of Art, located on the first floor and lower level of the Bunting Center. The library contains over 100,000 books and serials, over 5,000 DVDs and access to thousands of electronic journals through subscription databases and hundreds of print journal titles. Additionally, the library has access to over 100,000 ebooks, over 40,000 digital images and over 1,000 streaming video titles all available through the library catalog. While the main focus of the library is the visual arts, the collection also includes a broad and balanced selection of academic and recreational material relating to many subjects.
     </div>    
-</div> 
+     </div>     
+    
+    
     
 <div class="navcon">
     <div class="nav">
@@ -542,35 +835,76 @@ background: #a0d8d1;
         <a href="/">account</a>
         <a href="/">reviews</a>
         <a href="/">support</a>
-    
-    
-    
     </div>
-    
-</div>    
-    
-    
-    
-</div>    
-    
-
+</div>     
     
     
     
-<!--    S E A R C H -->
+<div class="searchbox">
+  <div class="container-1">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Search..." />
+  </div>
+</div>      
     
-  <div id="tfheader">
-		<form id="tfnewsearch" method="get" action="http://www.google.com">
-		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
-		</form>
-	<div class="tfclear"></div>
-	</div>  
+<select class="opt2">
+  <option value="Everything">Everything</option>
+  <option value="Library Search">Library Search</option>
+  <option value="Image Search">Image Search</option>
+  <option value="Reserves">Reserves</option>
+    <option value="Book Search">Book Search</option>
+    <option value="Ebook Search">E-Book Search</option>
+    <option value="Video and Dvd Search">Video And Dvd Search</option>
+    <option value="Periodical Search">Periodical Search</option>
+</select>
+    
+    
+<select class="opt">
+  <option value="All Fields">All Fields</option>
+  <option value="Title">Title</option>
+  <option value="Authors">Authors</option>
+  <option value="subject">Subject</option>
+    <option value="isbn">ISBN</option>
+    <option value="keywords">Keywords</option>
+</select>
+     
     
     
     
     
     
-<!--    S E A R C H -->
+    
+    
+    
+    
+    
+<div class="libinfobox">
+    <div id="librheader">
+        <div id="librtitle">
+            Library Info
+        </div>
+    </div>
+    <div class="librtext">
+    <li><a href="/">Policies & Guidelines</a></li>
+    <li><a href="/">Services & Facilities</a></li>
+    <li><a href="/">Research Database</a></li>
+    <li><a href="/">Interlibrary Loan Book</a></li>
+    <li><a href="/">Interlibrary Loan Article</a></li>
+    <li><a href="/">Recommend to Purcahse</a></li>
+    <li><a href="/">Citation Help</a></li>
+    </div>
+</div> 
+    
+    
+ 
+    
+    
+   
+    
+    
+    
+    
+    
     
 
 <div class="leftcon">
@@ -578,11 +912,37 @@ background: #a0d8d1;
         <div id="lefttitle">New Releases</div>
     </div>
     
-     <div id="leftimagebox">
-        <img id="leftimage" src="book1.jpg">
-        <img id="leftimage" src="book2.jpg">
-        <img id="leftimage" src="book3.jpg">
-    </div>
+<div id="leftimagebox">
+    <div id="imgbox">
+    <img id="leftimage" src="book1.jpg">
+        <div id="books">
+         Spencer Tracy: a biography
+<span style="font-weight: bold;">Curtis, James</span>
+        </div> 
+        </div>
+          
+         <div id="imgbox">
+         <img id="leftimage" src="book2.jpg">
+         <div id="books">
+         3-D Revolution: the History of Modern Steroscopic Cinema <span style="font-weight: bold;">Zone, Ray</span>
+         </div> 
+        </div>
+         
+         <div id="imgbox">
+         <img id="leftimage" src="book3.jpg">
+         <div id="books">
+         A History of Experimental Film and Video<br>
+<span style="font-weight: bold;">Curtis, James</span>
+         </div> 
+        </div>
+</div>
+    
+    
+    
+   
+    
+    
+    
     
     
     
@@ -590,27 +950,129 @@ background: #a0d8d1;
         <div id="lefttitle">Exhibitions</div>
     </div>
     
+<div class="cookbox">
+    
+   
+    <div class="cooktext">
+        <span style="font-weight: bold; font-size: 18px; text-transform: uppercase;">Cooking From the Book<br><br></span>
+        <p>"Old cookbooks connect you to your past and explain the history of the world"
+- Jose Andres Puerta</p>
+        <p>A cookbook is a promise of comfort, a window into the mind and mores of another time or place, and the promise of assistance from learned, beneficent, and patient teachers. More than just a collection of recipes, cookbooks educate and entertain their nascent chef-reader. They impart the alchemical techniques to disassemble ingredients and distil them as dinner. They provide the power of alteration and improvision, inviting the reader to follow their recipe, or maybe add a bit more garlic.</p>
+        
+<div class="cookdate">
+    <span style="font-weight:bold;font-size: 11px;">March 16 – April 6,2015<br>
+    Curated by John Dornberger<br>
+    jdornberger@mica.edu</span>
+    
+    
+      
+    
+</div>          
+        
+<div class="cookmore">
+<a href="/">See More </a>       
 </div>  
+        
+        
+        <img class="cookpic" src="cookbook.jpg" width="200" height="255" >
+        
+    </div> 
+     
+</div>    
+    
+</div>
     
     
     
     
+ <div class="important">
+    <div class="importheader">
+     <div class="importtitle">
+        Faq & News
+    </div>
+    </div>
+     
+     <div class="importinfo">
+     <div class="importsub">Special Collections</div>
+         <span style="text-indent: 10px; line-height: 14px;"> <li><a href="/">Book Arts Catalogs</a></li>
+          <li><a href="/">MICA Archives</a></li>
+          <li><a href="/">Masters Thesis Collection</a></li>
+          <li><a href="/">Artist Files</a></li></span>
+         
+         <div class="importsub">Images & Media</div>
+        <span style="text-indent: 10px; line-height: 14px;"> <li><a href="/">Alexander St. Press Video</a></li>
+          <li><a href="/">AP Images</a></li>
+          <li><a href="/">Art Museum Images</a></li>
+          <li><a href="/">Art Museum Image Gallery</a></li>
+         <li><a href="/">ARTstor</a></li>
+         <li><a href="/">Films on Demand</a></li>
+         <li><a href="/">Image Quest</a></li>
+         <li><a href="/">Rhizome.org</a></li></span>
+         
+         
+          <div class="importsub">Other Resources</div>
+        <span style="text-indent: 10px; line-height: 14px;"> <li><a href="/">A-Z Journal List</a></li>
+          <li><a href="/">Dover Series Index</a></li>
+          <li><a href="/">Journals, Sketchbooks, & Visual Diaries</a></li>
+          <li><a href="/">Research Guides</a></li>
+         <li><a href="/">Text Finder</a></li>
+         <li><a href="/">Tutorials</a></li></span>
+         
+         
+     </div>
+      
+    
+</div> 
     
     
     
     
+<div class="footer">
+    <div class="foothead">
+        The Decker Library
+    </div>
+    <hr width="983" size="2" >
+    
+<div class="side1">
+    <div class="subheader1">
+    Semester Hours
+    </div>
+    
+    <div class="subinfo1">
+    Mon - Thurs 8:30am - 9:00pm<br>
+Fri 8:30am - 4:30pm<br>
+Sat - Sun 12:00pm - 6:00pm<br>
+    
+    </div>
     
     
     
- </div>   
+    
+<div class="side1">
+    <div class="subheader1">
+        CIRCULATION
+    </div>
+    
+    <div class="subinfo1">
+    410 - 225 - 2272<br>
+    Fax: 410 - 225 - 2316<br>
+    circ@mica.edu
+        
+    
+    </div>    
+    
+    
+    
+</div>   
+ 
+
+    
+    </div>    
+    
+    
+    
+    
+  
 </body>    
 </html>
 
-<!--      
-
-id = #   more then once
-class = .     just once  
-
- background: #e74c3c; 
-
--->
